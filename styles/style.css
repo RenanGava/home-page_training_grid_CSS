@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(150, 0, 250), rgb(234, 0, 255));
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+header.container{
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+}
+
+header.container .desktop{
+    margin: 30px;
+}
+
+header.container li{
+    display: inline-block;
+}
+
+header.container li a{
+    position: relative;
+    z-index: 0;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 500ms;
+    color: black;
+}
+header.container li a:hover{
+    background-color: #eee;
+}
+
+div.bg{
+    padding: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/park-img.svg");
+}
+section.content-page{
+    margin: auto 0;
+    height: 100vh;
+}
+
+div.container{
+    margin-top: 100px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.container .content{
+    margin-left: 30%;
+}
+
+.container .content h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container .content p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(138, 138, 138);
+}
+
+.container .content a{
+    margin-top: 10px;
+    display: block;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 35px;
+    background-color: rgb(150, 0, 250);
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+}
